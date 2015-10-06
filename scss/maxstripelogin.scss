@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "settings";
+@import 'functions';
+@import "global";
+
+body {
+  padding-top: 90px;
+  background:
+  linear-gradient(
+                  $primary-color,
+                  transparent
+  ),
+  linear-gradient(
+                  90deg,
+                  skyblue,
+                  transparent
+  ),
+  linear-gradient(
+                  -90deg,
+                  coral,
+                  transparent
+  );
+
+  //http://bennettfeely.com/gradients/
+  background-blend-mode: screen;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: rem-calc(300);
+  background-color: whitesmoke;
+  @include border-radius(5px);
+  @include box-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
+}
+
+.header {
+  @include background-image(linear-gradient(180deg, #f5f5f7 0%, #e6e6e7 100%));
+  margin: 0 1px;
+  text-align: center;
+  @include border-radius(5px 5px 0 0);
+  h1 {
+    padding: 70px 36px 25px 36px;
+    text-shadow: 0 1px 1px white;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  position: relative;
+  .logo {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -36px;
+    width: 72px;
+    height: 72px;
+    @include radius(36px);
+    background-color: white;
+    //border: 3px double #b3b3b3;
+    @include box-shadow(0 0 6px rgba(178, 178, 178, 0.75), inset 0 -1px 1px #979797);
+    img {
+      position: absolute;
+      left: 5px;
+      top: 15px;
+    }
+  }
+}
+
+.section {
+  border-top: 1px solid #ccc;
+  padding: 36px 36px 26px 36px;
+}
+
+form input, form label {
+  font-size: rem-calc(15);
+}
+
+.text {
+  label {
+    display: none;
+  }
+  input {
+    color: #2c6f7d;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    @include border-radius(5px);
+    margin-bottom: 10px;
+    padding-left: 33px;
+    &:focus {
+      outline: 0;
+      border-color: #2c6f7d;
+    }
+  }
+  /*
+  input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+  }
+
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+  }
+  */
+}
+
+#Remember {
+  background-color: white;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #ccc;
+  @include border-radius(5px);
+  margin-bottom: 10px;
+  input {
+    @include box-shadow(0 0 1px #e6e6e6, inset 0 -1px 4px #e6e6e6);
+    font-size: rem-calc(14);
+    margin-left: 9px;
+    margin-right: 5px;
+  }
+}
+
+#Email, #Password {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 36px;
+    background: transparent inline-image("../images/Email.png") no-repeat 10px center;
+  }
+}
+
+#Password:after {
+  background: transparent inline-image("../images/Pass.png") no-repeat 10px center;
+}
+
+.Actions input {
+  height: 36px;
+
+  background: #89b917;
+  border: 1px solid #89b917;
+  @include border-radius(5px);
+  width: 100%;
+  margin-top: 16px;
+  color: white;
+  font-size: rem-calc(17);
+  font-weight: 500;
+  // @include background-image(linear-gradient(180deg, #b4ec51 0%, #429321 100%));
+  //@include box-shadow(0 1px 2px #9fb8c8);
+  //text-shadow: 0 -1px 0 #3a8bc9;
+  &:hover, &:active, &focus {
+    background: darken(#89b917, 7%);
+    border-color: darken(#89b917, 4%);
+  }
+}
+
+#ForgotPassword {
+  text-align: center;
+  a {
+    text-shadow: 0 1px 1px white;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+}
+
+.message {
+  border: 1px solid #ccc;
+  nackground: #fff;
+  @include border-radius(5px);
+  padding: 10px;
+  margin: 0 0 25px 0;
+  font-size: rem-calc(14);
+
+  &.bad {
+    border-color: darken($alert-color, 5%);
+    color: #fff;
+    background: $alert-color;
+  }
+
+  &.good {
+    border-color: darken($success-color, 5%);
+    color: #fff;
+    background: $success-color;
+  }
+}
