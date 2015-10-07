@@ -3,7 +3,10 @@
 Login templates for SilverStripe 3
 
 ##Installation##
-Via composer or download and folder name to "maxstripelogin"
+download or composer 
+```
+composer require "webmaxsk/silverstripe-maxstripelogin:*"
+```
 
 ##Setup##
 customize via yaml config file
