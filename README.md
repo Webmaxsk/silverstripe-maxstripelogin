@@ -15,3 +15,5 @@ MaxLoginFormPageExtension:
   MaxStripeLoginLogoPath: your-72x72px-icon-file-path
   MaxStripeLoginLink: http://webmax.sk
 ```  
+
+Inspiration: https://github.com/feejin/Silverstripe-SecurityTemplates
