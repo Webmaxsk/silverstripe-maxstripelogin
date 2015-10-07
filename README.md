@@ -5,7 +5,7 @@ Login templates for SilverStripe 3
 ##Installation##
 download or composer 
 ```
-composer require "silverstripesk/silverstripe-disqus:*"
+composer require "webmaxsk/silverstripe-maxstripelogin:*"
 ```
 
 ##Setup##
