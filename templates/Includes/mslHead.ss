@@ -5,7 +5,7 @@ $MetaTags(false)
 $ClearRequirements
 <% require themedCSS(maxstripelogin, maxstripelogin) %>
 <!--[if lte IE 8]>
-<script src="$JsDir/html5shiv.min.js"></script>
+<script src="$MaxStripeDir/havascript/html5shiv.min.js"></script>
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 <script>

@@ -63,8 +63,8 @@ body {
     @include box-shadow(0 0 6px rgba(178, 178, 178, 0.75), inset 0 -1px 1px #979797);
     img {
       position: absolute;
-      left: 5px;
-      top: 15px;
+      left: 0;
+      top: 0;
     }
   }
 }
