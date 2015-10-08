@@ -16,4 +16,4 @@ MaxLoginFormPageExtension:
   MaxStripeLoginLink: http://webmax.sk
 ```  
 
-Inspiration: https://github.com/feejin/Silverstripe-SecurityTemplates
+Inspiration: https://github.com/feejin/Silverstripe-SecurityTemplates & http://sketchrepo.com/stripe-checkout/
