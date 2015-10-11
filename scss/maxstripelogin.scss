@@ -7,24 +7,30 @@
 
 body {
   padding-top: 90px;
-  background:
-  linear-gradient(
-                  $primary-color,
-                  transparent
-  ),
-  linear-gradient(
-                  90deg,
-                  skyblue,
-                  transparent
-  ),
-  linear-gradient(
-                  -90deg,
-                  coral,
-                  transparent
-  );
+}
 
-  //http://bennettfeely.com/gradients/
-  background-blend-mode: screen;
+//http://caniuse.com/#feat=css-featurequeries
+@supports(background-blend-mode: screen) {
+  body {
+    background:
+    linear-gradient(
+                    $primary-color,
+                    transparent
+    ),
+    linear-gradient(
+                    90deg,
+                    skyblue,
+                    transparent
+    ),
+    linear-gradient(
+                    -90deg,
+                    coral,
+                    transparent
+    );
+    //http://bennettfeely.com/gradients/
+    //https://dev.opera.com/articles/getting-to-know-css-blend-modes/
+    background-blend-mode: screen;
+  }
 }
 
 .wrapper {

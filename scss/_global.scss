@@ -37,8 +37,6 @@ img { max-width: 100%; height: auto; }
 img { -ms-interpolation-mode: bicubic; }
 
 // Miscellaneous useful HTML classes
-.left { float: left !important; }
-.right { float: right !important; }
 .clearfix { @include clearfix; }
 
 // Hide visually and from screen readers
