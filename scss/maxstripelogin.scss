@@ -129,7 +129,7 @@ form input, form label {
   }
 }
 
-#Email, #Password {
+#Email, #MemberLoginForm_LoginForm_Email_Holder, #Password, #MemberLoginForm_LoginForm_Password_Holder {
   position: relative;
   &:after {
     content: "";
@@ -142,7 +142,7 @@ form input, form label {
   }
 }
 
-#Password:after {
+#Password:after, #MemberLoginForm_LoginForm_Password_Holder:after {
   background: transparent inline-image("../images/Pass.png") no-repeat 10px center;
 }
 

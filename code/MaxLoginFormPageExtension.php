@@ -13,6 +13,11 @@ class MaxLoginFormPageExtension extends Extension
         return "/" . MAXSTRIPELOGIN_DIR;
     }
 
+    public function MaxStripeDirName()
+    {
+        return MAXSTRIPELOGIN_DIR;
+    }
+
     private static $MaxStripeLoginLogoPath = false;
     private static $MaxStripeLoginLink = false;
 

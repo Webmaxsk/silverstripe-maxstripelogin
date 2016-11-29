@@ -3,9 +3,9 @@
 <meta name="viewport" content="width=device-width">
 $MetaTags(false)
 $ClearRequirements
-<% require themedCSS(maxstripelogin, maxstripelogin) %>
+<% require themedCSS(maxstripelogin, $MaxStripeDirName) %>
 <!--[if lte IE 8]>
-<script src="$MaxStripeDir/havascript/html5shiv.min.js"></script>
+<script src="$MaxStripeDir/javascript/html5shiv.min.js"></script>
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 <script>
