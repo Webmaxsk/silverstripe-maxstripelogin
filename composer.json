@@ -1,23 +1,32 @@
 {
-	"name": "webmaxsk/silverstripe-maxstripelogin",
-	"description": "Custom security templates to mirror CMS",
-	"type": "silverstripe-module",
-	"homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates",
-	"keywords": ["silverstripe", "login", "security", "templates", "theme"],
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Pali Ondras",
-			"email": "ondras@webmax.sk"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/webmaxsk/silverstripe-maxstripelogin/issues"
-	},
-	"require": {
-		"silverstripe/framework": ">=3.0"
-	},
-	"extra": {
-		"installer-name": "maxstripelogin"
-	}
+    "name": "webmaxsk/silverstripe-maxstripelogin",
+    "description": "Custom security templates to mirror CMS",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/feejin/Silverstripe-SecurityTemplates",
+    "license": "BSD-3-Clause",
+    "keywords": ["silverstripe", "login", "security", "templates", "theme"],
+    "authors": [
+        {
+            "name": "Pali Ondras",
+            "email": "ondras@webmax.sk"
+        },
+        {
+            "name": "Rastislav Brandobur",
+            "email": "brandobur@webmax.sk"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/webmaxsk/silverstripe-maxstripelogin/issues"
+    },
+    "require": {
+        "silverstripe/framework": "^4.0"
+    },
+    "extra": {
+        "installer-name": "maxstripelogin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webmaxsk\\MaxStripeLogin\\": "src/"
+        }
+    }
 }

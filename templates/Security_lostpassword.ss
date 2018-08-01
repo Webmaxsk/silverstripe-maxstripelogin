@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="$ContentLocale">
 <head>
-	<% include mslHead %>
+    <% include mslHead %>
 </head>
 <body>
 <div class="wrapper">
-	<% include mslHeader %>
+    <% include mslHeader %>
     <section class="section">
-		$Form
+        <% if $Content %>
+            <div class="message good">$Content</div>
+        <% end_if %>
+        <% if $Form %>
+            $Form
+        <% end_if %>
     </section>
 </div>
 </body>

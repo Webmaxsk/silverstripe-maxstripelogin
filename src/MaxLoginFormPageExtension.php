@@ -1,8 +1,14 @@
 <?php
 
+namespace Webmaxsk\MaxStripeLogin;
+
+use SilverStripe\Core\Extension;
+use SilverStripe\View\Requirements;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Control\Director;
+
 class MaxLoginFormPageExtension extends Extension
 {
-
     public function ClearRequirements()
     {
         Requirements::clear();
@@ -11,11 +17,6 @@ class MaxLoginFormPageExtension extends Extension
     public function MaxStripeDir()
     {
         return "/" . MAXSTRIPELOGIN_DIR;
-    }
-
-    public function MaxStripeDirName()
-    {
-        return MAXSTRIPELOGIN_DIR;
     }
 
     private static $MaxStripeLoginLogoPath = false;

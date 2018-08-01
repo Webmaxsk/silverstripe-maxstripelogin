@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 $MetaTags(false)
 $ClearRequirements
-<% require themedCSS(maxstripelogin, $MaxStripeDirName) %>
+<% require themedCSS(maxstripelogin) %>
 <!--[if lte IE 8]>
 <script src="$MaxStripeDir/javascript/html5shiv.min.js"></script>
 <![endif]-->

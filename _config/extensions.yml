@@ -1,12 +1,10 @@
 ---
-Name: maxstripelogin-extensions
+Name: maxstripelogin_extensions
 ---
-Page_Controller:
+PageController:
   extensions:
-    - MaxLoginFormPageExtension
+    - Webmaxsk\MaxStripeLogin\MaxLoginFormPageExtension
+
 #MaxLoginFormPageExtension:
   #MaxStripeLoginLogoPath: false
-  #MaxStripeLoginLink: http://webmax.sk
-
-
-
+  #MaxStripeLoginLink: https://webmax.sk/
