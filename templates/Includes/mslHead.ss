@@ -3,9 +3,9 @@
 <meta name="viewport" content="width=device-width">
 $MetaTags(false)
 $ClearRequirements
-<% require themedCSS(maxstripelogin) %>
+<% require css('webmaxsk/silverstripe-maxstripelogin: client/dist/css/maxstripelogin.css') %>
 <!--[if lte IE 8]>
-<script src="$MaxStripeDir/javascript/html5shiv.min.js"></script>
+<script src="/resources/webmaxsk/silverstripe-maxstripelogin/client/dist/javascript/html5shiv.min.js"></script>
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 <script>

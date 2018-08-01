@@ -4,12 +4,12 @@ project_type = :stand_alone
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "images"
-javascripts_dir = "javascript"
+css_dir = "client/dist/css"
+sass_dir = "client/src/scss"
+images_dir = "client/images"
+javascripts_dir = "client/dist/javascript"
 output_style = :compressed
-fonts_dir = "fonts"
+fonts_dir = "client/fonts"
 
 # uncomment if you want to watch scss files in Chrome
 sass_options = {:sourcemap => true}

@@ -22,7 +22,11 @@
         "silverstripe/framework": "^4.0"
     },
     "extra": {
-        "installer-name": "maxstripelogin"
+        "installer-name": "maxstripelogin",
+        "expose": [
+            "client/dist",
+            "client/images"
+        ]
     },
     "autoload": {
         "psr-4": {
